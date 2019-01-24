@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 
@@ -28,11 +28,11 @@ if len(sys.argv) >= 2:
 		word=str(sys.argv[i])
 		wordlength = len(word)
 		#If there is only one letter don't need to reverse
-		if wordlength > 1: 
+		if wordlength > 1:
 			beg = 0 #Beginning letter of word
 			end = wordlength-1 #Ending letter of word
-			word="".join(reverse_word(word,beg,end)[:])		
+			word="".join(reverse_word(word,beg,end)[:])
 
-		print word		
+		print(word)
 else:
 	print ("Must include a string argument to reverse")
